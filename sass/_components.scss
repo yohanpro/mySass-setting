@@ -122,8 +122,10 @@
   }
   &__item:not(:last-child) {
     margin-bottom: 0.5rem;
+    @media only screen and (max-width: $bp-medium) {
+      margin: 0;
+    }
   }
-
   &__item::before {
     content: "";
     position: absolute;
@@ -157,6 +159,9 @@
     align-items: center;
     position: relative;
     z-index: 10;
+    @media only screen and (max-width: $bp-medium) {
+      justify-content: center;
+    }
   }
 
   &__icon {
@@ -175,6 +180,10 @@
   color: var(--color-grey-light-4);
   text-align: center;
   padding: 2.5rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
 }
 
 //////////////////////////

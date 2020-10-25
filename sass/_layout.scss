@@ -4,6 +4,10 @@
   box-shadow: var(--shadow-dark);
   background-color: var(--color-grey-light-2);
   min-height: 50rem;
+
+  @media only screen and (max-width: $bp-largest) {
+    margin: 0;
+  }
 }
 
 .header {
@@ -11,13 +15,15 @@
   font-size: 1.4rem;
   background-color: #fff;
   border-bottom: var(--line);
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .content {
   display: flex;
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+  }
 }
 .sidebar {
   background-color: var(--color-grey-dark-1);
